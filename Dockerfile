@@ -7,7 +7,7 @@ RUN apt-get update && \
   apt-get upgrade -qqy --no-install-recommends
 
 # install file tools
-RUN apt-get install -qqy git wget curl unzip bzip2
+RUN apt-get install -qqy wget curl tar unzip bzip2
 
 ENV DEBIAN_FRONTEND noninteractive
 
