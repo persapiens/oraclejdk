@@ -12,9 +12,9 @@ RUN apt-get install -qqy wget curl tar unzip bzip2
 ENV DEBIAN_FRONTEND noninteractive
 
 ENV VERSION 8
-ENV UPDATE 131
-ENV BUILD 11
-ENV SIG d54c1d3a095b4ff2b6607d096fa80163
+ENV UPDATE 141
+ENV BUILD 15
+ENV SIG 336fa29ff2bb4ef291e347e091f7f4a7
 
 ENV JAVA_HOME /usr/lib/jvm/java-${VERSION}-oracle
 
