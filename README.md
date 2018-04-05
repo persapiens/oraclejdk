@@ -1,2 +1,2 @@
-# oraclejdk
-Oracle JDK Dockerfile
+# oraclejre
+Oracle JRE Dockerfile
