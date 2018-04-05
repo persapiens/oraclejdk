@@ -21,9 +21,8 @@ RUN apt-get update -qq && \
 	| tar -xzC "${JAVA_HOME}" --strip-components=1 && \
   apt-get remove --purge --auto-remove -y curl unzip bzip2 && \
   apt-get autoclean && apt-get --purge -y autoremove && \
-  rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-RUN update-alternatives --install "/usr/bin/java" "java" "${JAVA_HOME}/bin/java" 1 && \
+  rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
+  update-alternatives --install "/usr/bin/java" "java" "${JAVA_HOME}/bin/java" 1 && \
 	update-alternatives --install "/usr/bin/javaws" "javaws" "${JAVA_HOME}/bin/javaws" 1 && \
 	update-alternatives --set java "${JAVA_HOME}/bin/java" && \
 	update-alternatives --set javaws "${JAVA_HOME}/bin/javaws"
