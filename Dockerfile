@@ -4,9 +4,9 @@ MAINTAINER Marcelo Fernandes <persapiens@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 ENV VERSION 8
-ENV UPDATE 161
-ENV BUILD 12
-ENV SIG 2f38c3b165be4555a1fa6e98c45e0808
+ENV UPDATE 171
+ENV BUILD 11
+ENV SIG 512cd62ec5174c3487ac17c61aaa89e8
 
 ENV JAVA_HOME /usr/lib/jvm/java-${VERSION}-oracle
 
